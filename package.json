@@ -19,6 +19,7 @@
   "devDependencies": {
     "@types/marked": "0.6.1",
     "@types/puppeteer-core": "1.9.0",
+    "now": "^15.2.0",
     "typescript": "3.3.3333"
   }
 }
