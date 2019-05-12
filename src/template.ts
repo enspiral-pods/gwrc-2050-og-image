@@ -6,10 +6,6 @@ const bold = readFileSync(`${__dirname}/../.fonts/Inter-Bold.woff2`).toString('b
 const globe = readFileSync(`${__dirname}/../public/globe.png`).toString('base64');
 
 function getCss() {
-    const background = 'black';
-    const foreground = 'white';
-    const radial = 'dimgray';
-
     return `
     @font-face {
         font-family: 'Inter';
@@ -19,8 +15,7 @@ function getCss() {
     }
 
     body {
-        background: ${background};
-        background-image: radial-gradient(${radial} 5%, transparent 0);
+        background: black;
         background-size: 60px 60px;
         height: 100vh;
         display: flex;
@@ -55,7 +50,7 @@ function getCss() {
         font-size: 90px;
         font-style: normal;
         font-weight: bold;
-        color: ${foreground};
+        color: white;
         line-height: 1.4;
     }`;
 }
